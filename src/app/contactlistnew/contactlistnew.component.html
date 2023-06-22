@@ -1,0 +1,61 @@
+<section class="contact">
+  <aside class="main">
+    <h3 class="header-text">Contact<span>List</span></h3>
+
+    <div class="contact-area">
+      <div class="single-contact">
+        <input
+          type="text"
+          [(ngModel)]="name"
+          id="name"
+          name="name"
+          value="name"
+          placeholder="Enter Name...."
+        />
+
+        <input
+          type="text"
+          [(ngModel)]="phone"
+          id="phone"
+          name="phone"
+          value="phone"
+          placeholder="Enter Phone number...."
+        />
+        
+        <input
+          type="date"
+          [(ngModel)]="dob"
+          id="dob"
+          name="dob"
+          value="dob"
+          placeholder="Enter Date of brith........."
+        />
+
+        
+        <input
+          type="text"
+          [(ngModel)]="age"
+          id="age"
+          name="age"
+          value="age"
+          placeholder="Enter Age........"
+        />
+
+    
+        <aside class="btn_area">
+         <button>Cancel</button>
+
+          <button (click)="submit()">Submit</button>
+
+        
+        </aside>
+
+      
+      </div>
+
+      
+    </div>
+
+  
+  </aside>
+</section>

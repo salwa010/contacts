@@ -1,0 +1,22 @@
+<section class="main">
+  <aside class="heading_container">
+    <h3 class="header-text">Contact<span>List</span></h3>
+    <span class="button_add">
+      <button class="add" (click)="add()">+Add</button>
+    </span>
+  </aside>
+  <aside class="card_area">
+    <aside class="card" *ngFor="let item of contactList; let i= index">
+      <aside class="texts">
+        <h3>{{ item.name }}</h3>
+        <h3>{{ item.Phone }}</h3>
+        <h3>{{ item.dob }}</h3>
+        <h3>{{ item.age }}</h3>
+      </aside>
+      <aside class="button_area">
+        <button (click)="deleteContact(i)">Delete</button>
+        <button (click)="editContact(i)">Edit</button>
+      </aside>
+    </aside>
+  </aside>
+</section>
